@@ -55,7 +55,7 @@ Shader "Unlit/06_01_Aces"
       }
 
       float3 RRTAndODTFit(float3 v){
-          float3 a=v*(v*0.0245786)-0.000090537;
+          float3 a=v*(v+0.0245786)-0.000090537;
           float3 b = v*(0.983729*v+0.4329510)+0.238081;
           return a/b;
       }
